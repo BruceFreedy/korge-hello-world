@@ -9,8 +9,8 @@ import com.soywiz.korma.geom.*
 import com.soywiz.korma.interpolation.*
 
 suspend fun main() = Korge(width = 512, height = 512, bgcolor = Colors["#2b2b2b"]) {
-	val minDegrees = (-32).degrees
-	val maxDegrees = (+32).degrees
+	val minDegrees = (-90).degrees
+	val maxDegrees = (+90).degrees
 
 	val image = image(resourcesVfs["korge.png"].readBitmap()) {
 		rotation = maxDegrees
