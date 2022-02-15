@@ -34,4 +34,5 @@ korge {
 	targetIos()
 	targetAndroidIndirect() // targetAndroidDirect()
 	//targetAndroidDirect()
+	supportBox2d()
 }
