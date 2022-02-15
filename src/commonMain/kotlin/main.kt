@@ -17,11 +17,11 @@ suspend fun main() = Korge(bgcolor = Colors["#2b2b2b"]) {
 	val halfWidth = width/2
 	val halfHeight = height/2
 	val popSound = resourcesVfs["pop.mp3"].readSound()
-	val me = solidRect(10, 80, Colors.ORANGERED).apply {
+	val me = solidRect(10, 160, Colors.ORANGERED).apply {
 		fixture(BodyType.KINEMATIC)
 		center()
 	}.position(50.0, halfHeight)
-	val ai = solidRect(10, 80, Colors.PALEVIOLETRED).apply {
+	val ai = solidRect(10, 160, Colors.PALEVIOLETRED).apply {
 		fixture(BodyType.KINEMATIC)
 		center()
 	}.position(width - 50.0, halfHeight)
@@ -38,7 +38,7 @@ suspend fun main() = Korge(bgcolor = Colors["#2b2b2b"]) {
 	val ball = circle(20.0, Colors.LIGHTYELLOW).position(450, 100).rotation((0).degrees)
 		.apply { center();registerBodyWithFixture(type = BodyType.KINEMATIC, gravityScale = 0, bullet = true) }
 	val ballBody = ball.body!!
-	val ballSpeed = 70f
+	val ballSpeed = 40f
 	val velocity = Vec2(ballSpeed, ballSpeed)
 	var xb = true
 	var yb = true
