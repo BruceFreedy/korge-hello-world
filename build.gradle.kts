@@ -17,7 +17,7 @@ buildscript {
 apply<KorgeGradlePlugin>()
 
 korge {
-	id = "com.sample.demo"
+	id = "me.brucefreedy.pingponggame"
 
 // To enable all targets at once
 
